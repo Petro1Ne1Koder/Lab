@@ -16,38 +16,65 @@ a {
     text-decoration: none;
 }
 
+// Лендинг
+
 .header {
     display: flex;
-    background-color: $header;
+    background-color: #333;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     max-width: 1940px;
     margin: 0 auto;
     padding: 15px 15px;
+    position: relative; /* Добавлено */
+    z-index: 999; /* Добавлено */
 }
-
-.container {
-    max-width: 1940px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-
 
 .nav {
     list-style: none;
     display: flex;
     text-transform: uppercase;
-    &__item {
-        margin-right: 20px;
-        &:last-child {
-            margin-right: 20px;
-        }
+}
+
+.nav__item {
+    margin-right: 20px;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 930px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        padding: 20px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        z-index: 999; /* Добавлено */
     }
-    &__link {
-        color: $text;
-        text-decoration: none;
+
+    .navbar-open {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+        position: relative; /* Добавлено */
+        z-index: 1000; /* Добавлено */
     }
 }
 
@@ -283,7 +310,7 @@ a {
     }
 }
 
-//  Начало игры
+//  Инструкция по началу игры
 
 .start {
     background-color: $dark;

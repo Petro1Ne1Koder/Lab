@@ -13,27 +13,28 @@
 </head>
 <link rel="shortcut icon" href="/images/web.ico" type="image/x-icon">
 <body>
-    <header>
-        <div class="header">
-            <a href="index.html" class="header__logo"><img src="/images/Logo.png" alt="Logo"></a>
-            <nav>
-                <ul class="nav">
-                    <li class="nav__item">
-                        <a href="info.html" class="nav__link">Кодекс</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="news.html" class="nav__link">Новини</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Форум</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="log.html" class="nav__link">Особистий кабінет</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="header">
+        <a href="index.html" class="header__logo"><img src="/images/Logo.png" alt="Logo"></a>
+        <nav>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="info.html" class="nav__link">Кодекс</a>
+                </li>
+                <li class="nav__item">
+                    <a href="news.html" class="nav__link">Новини</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Форум</a>
+                </li>
+                <li class="nav__item">
+                    <a href="log.html" class="nav__link">Особистий кабінет</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="navbar-toggle">&#9776;</div>
+    </div>
+</header>
     <div class="news-itemm">
         <h2>Ми відкрились!</h2>
         <img src="/images/new1.png" alt="Изображение новости">
@@ -67,5 +68,15 @@
           <a href="news1.html" class="read-more">Детальніше</a>
         </div>
       </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarToggle = document.querySelector('.navbar-toggle');
+            var navbarMenu = document.querySelector('.nav');
+
+            navbarToggle.addEventListener('click', function () {
+                navbarMenu.classList.toggle('navbar-open');
+            });
+        });
+    </script>
 </body>
 </html>
