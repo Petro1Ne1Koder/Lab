@@ -42,38 +42,86 @@
                 <a class="infos__item">Персонажі</a>
             </li>
             <li class="infos__item">
-                <a href="#" class="infos__link">Петро</a>
+                <a href="#" class="infos__link1">Петро</a>
             </li>
             <li class="infos__item">
-                <a href="#" class="infos__link">Іван</a>
+                <a href="#" class="infos__link2">Іван</a>
             </li>
             <li class="infos__item">
                 <a class="infos__item">Фракції</a>
             </li>
             <li class="infos__item">
-                <a href="#" class="infos__link">Рицарі</a>
+                <a href="#" class="infos__link3">Лицарі</a>
             </li>
             <li class="infos__item">
                 <a class="infos__item">Предмети</a>
             </li>
             <li class="infos__item">
-                <a href="#" class="infos__link">Меч</a>
+                <a href="#" class="infos__link4">Меч</a>
             </li>
             <li class="infos__item">
                 <a class="infos__item">Різне</a>
             </li>
             <li class="infos__item">
-                <a href="#" class="infos__link">лор чатина 1</a>
+                <a href="#" class="infos__link5">лор чатина 1</a>
             </li>
             <li class="infos__item">
-                <a href="#" class="infos__link">лор чатина 2</a>
+                <a href="#" class="infos__link6">лор чатина 2</a>
             </li>
         </ul>
     </div>
     <div class="Textos">
-        <h3 class="Textos__title">Петро</h3>
-        <p class="Textos__text">Петро це фермер, який любить працювати</p>
+        <h3 class="pageTitle">Кодекс</h3>
+        <p class="textContainer">Ласкаво просимо до кодексу, виберіть потрібну тему</p>
     </div>
+    <script>
+        // Получаем ссылки на элементы
+        var link1 = document.querySelector('.infos__link1');
+        var link2 = document.querySelector('.infos__link2');
+        var link3 = document.querySelector('.infos__link3');
+        var link4 = document.querySelector('.infos__link4');
+        var link5 = document.querySelector('.infos__link5');
+        var link6 = document.querySelector('.infos__link6');
+        var pageTitle = document.querySelector(".pageTitle");
+        var textContainer = document.querySelector(".textContainer");
+
+        // Назначаем обработчики событий для кнопок
+        link1.addEventListener("click", function(event) {
+        event.preventDefault(); // Отменяем переход по ссылке
+        pageTitle.innerHTML = "Петро";
+        textContainer.innerHTML = "Петро це фермер, який любить працювати";
+        });
+
+        link2.addEventListener("click", function(event) {
+        event.preventDefault(); // Отменяем переход по ссылке
+        pageTitle.innerHTML = "Іван";
+        textContainer.innerHTML = "Іван це інший персонаж";
+        });
+
+        link3.addEventListener("click", function(event) {
+        event.preventDefault(); // Отменяем переход по ссылке
+        pageTitle.innerHTML = "Лицарі";
+        textContainer.innerHTML = "Лицарі це орден захисників";
+        });
+
+        link4.addEventListener("click", function(event) {
+        event.preventDefault(); // Отменяем переход по ссылке
+        pageTitle.innerHTML = "Меч";
+        textContainer.innerHTML = "Меч стандартне спорядження лицарів";
+        });
+
+        link5.addEventListener("click", function(event) {
+        event.preventDefault(); // Отменяем переход по ссылке
+        pageTitle.innerHTML = "лор чатина 1";
+        textContainer.innerHTML = "1";
+        });
+
+        link6.addEventListener("click", function(event) {
+        event.preventDefault(); // Отменяем переход по ссылке
+        pageTitle.innerHTML = "лор чатина 2";
+        textContainer.innerHTML = "2";
+        });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var navbarToggle = document.querySelector('.navbar-toggle');

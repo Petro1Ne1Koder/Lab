@@ -807,6 +807,42 @@ button[type=submit]:hover {
   bottom: 700px;
 }
 
+.infos__link1 {
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
+.infos__link2 {
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
+.infos__link3 {
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
+.infos__link4 {
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
+.infos__link5 {
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
+.infos__link6 {
+  font-size: 16px;
+  position: relative;
+  left: 5px;
+}
+
 .prof-inf {
   position: relative;
   margin: 0 auto;
