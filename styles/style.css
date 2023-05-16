@@ -72,6 +72,41 @@ a {
     z-index: 1000; /* Добавлено */
   }
 }
+@media screen and (max-width: 1562px) {
+  .news {
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+  }
+  .news-item1 {
+    position: relative;
+    bottom: 370px;
+  }
+  .news-item2 {
+    position: relative;
+    bottom: 740px;
+  }
+  .newsbtn {
+    display: flex;
+    position: relative;
+    left: 50%;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 1219px;
+  }
+  .info-links {
+    display: flex;
+    position: relative;
+    left: 50px;
+  }
+  .ending {
+    position: relative;
+    top: 1089px;
+  }
+}
 .banner {
   text-align: center;
   background-color: #050004;
@@ -190,7 +225,8 @@ a {
 .newsbtn {
   display: flex;
   position: relative;
-  right: 526px;
+  right: 60%;
+  transform: translate(-50%, 0);
   bottom: 300px;
 }
 .newsbtn__btn {
@@ -207,7 +243,7 @@ a {
   max-width: 1940px;
 }
 
-.info {
+.info-links {
   display: flex;
   background-color: #282828;
   width: 500px;
@@ -216,15 +252,15 @@ a {
   position: relative;
   left: 17%;
 }
-.info__header__img {
+.info-links__header__img {
   display: flex;
   position: relative;
   bottom: 18px;
 }
-.info__btn__btn {
+.info-links__btn__btn {
   display: flex;
-  position: absolute;
-  left: 50%;
+  position: relative;
+  right: 94%;
   transform: translate(-50%, 0);
   top: 88%;
   font-size: 2.5rem;
@@ -233,11 +269,11 @@ a {
   color: #FFFFFF;
   border-radius: 0.8rem;
 }
-.info__end {
+.info-links__end {
   display: flex;
 }
 
-.links1 {
+.info-links1 {
   display: flex;
   background-color: #282828;
   width: 500px;
@@ -245,40 +281,41 @@ a {
   border-radius: 0.8rem;
   position: relative;
   left: 50%;
+  bottom: 507px;
 }
-.links1__header {
+.info-links1__header {
   display: flex;
 }
-.links1__header__img {
+.info-links1__header__img {
   display: flex;
   max-height: 90px;
   max-width: 500px;
   position: relative;
 }
-.links1__header__title {
+.info-links1__header__title {
   display: flex;
   position: absolute;
   left: 82px;
 }
-.links1__btn {
+.info-links1__btn {
   position: relative;
   right: 85%;
 }
-.links1__btn__instagram {
+.info-links1__btn__instagram {
   display: flex;
   position: absolute;
   max-width: 350px;
   max-height: 90px;
   top: 25%;
 }
-.links1__btn__tiktok {
+.info-links1__btn__tiktok {
   display: flex;
   position: absolute;
   max-width: 350px;
   max-height: 90px;
   top: 47%;
 }
-.links1__btn__patreon {
+.info-links1__btn__patreon {
   display: flex;
   position: absolute;
   max-width: 350px;
@@ -711,7 +748,7 @@ button[type=submit]:hover {
 .new3-text {
   max-width: 800px;
   position: relative;
-  left: 350px;
+  margin: 0 auto;
 }
 .new3-btn {
   font-size: 2.5rem;
@@ -772,7 +809,7 @@ button[type=submit]:hover {
 
 .prof-inf {
   position: relative;
-  left: 300px;
+  margin: 0 auto;
   max-width: 400px;
   max-height: 500px;
   margin: 50px;
@@ -814,8 +851,6 @@ button[type=submit]:hover {
 
 .personalization-section {
   position: relative;
-  left: 800px;
-  bottom: 346px;
   max-width: 400px;
   max-height: 500px;
   margin: 50px;

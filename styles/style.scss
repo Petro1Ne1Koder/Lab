@@ -50,6 +50,9 @@ a {
     display: none;
 }
 
+@media screen and (max-width: 1065px) {
+}
+
 @media screen and (max-width: 930px) {
     .nav {
         display: none;
@@ -76,8 +79,44 @@ a {
         position: relative; /* Добавлено */
         z-index: 1000; /* Добавлено */
     }
+
 }
 
+@media screen and (max-width: 1562px) {
+    .news {
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+        &-item1 {
+            position: relative;
+            bottom: 370px;
+        }
+        &-item2 {
+            position: relative;
+            bottom: 740px;
+        }
+    }
+    .newsbtn {
+        display: flex;
+        position: relative;
+        left: 50%;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 1219px;
+    }
+    .info-links {
+        display: flex;
+        position: relative;
+        left: 50px;
+    }
+    .ending {
+        position: relative;
+        top: 1089px;
+    }
+}
 
 .banner {
     text-align: center;
@@ -197,7 +236,8 @@ a {
 .newsbtn {
     display: flex;
     position: relative;
-    right: 526px;
+    right: 60%;
+    transform: translate(-50%, 0);
     bottom: 300px;
     &__btn {
         border: 1px solid $button1;
@@ -214,7 +254,7 @@ a {
     max-width: 1940px;
 }
 
-.info {
+.info-links {
     display: flex;
     background-color: $news;
     width: 500px;
@@ -229,8 +269,8 @@ a {
     }
     &__btn__btn {
         display: flex;
-        position: absolute;
-        left: 50%;
+        position: relative;
+        right: 94%;
         transform: translate(-50%, 0);
         top: 88%;
         font-size: 2.5rem;
@@ -244,7 +284,7 @@ a {
     }
 }
 
-.links1 {
+.info-links1 {
     display: flex;
     background-color: $news;
     width: 500px;
@@ -252,6 +292,7 @@ a {
     border-radius: .8rem;
     position: relative;
     left: 50%;
+    bottom: 507px;
     &__header {
         display: flex;
         &__img {
@@ -732,7 +773,7 @@ a {
     &-text {
         max-width: 800px;
         position: relative;
-        left: 350px;
+        margin: 0 auto;
     }
     &-btn {
         font-size: 2.5rem;
@@ -797,7 +838,8 @@ a {
 
 .prof-inf {
     position: relative;
-    left: 300px;
+    // left: 300px;
+    margin: 0 auto;
     max-width: 400px;
     max-height: 500px;
     margin: 50px;
@@ -839,8 +881,6 @@ a {
 
   .personalization-section {
     position: relative;
-    left: 800px;
-    bottom: 346px;
     max-width: 400px;
     max-height: 500px;
     margin: 50px;
